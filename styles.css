@@ -134,6 +134,14 @@ span.optional {
         padding: 0 1rem;
     }
 
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    body > p {
+        font-size: 1.4rem;
+    }
+
     .form-group p,
     .form-group label,
     input,
