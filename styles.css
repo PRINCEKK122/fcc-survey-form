@@ -127,3 +127,38 @@ span.optional {
     padding: 1.2rem 0;
     cursor: pointer;
 }
+
+/* Media Queries */
+@media only screen and (max-width: 765px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    .form-group p,
+    .form-group label,
+    input,
+    textarea,
+    p {
+        font-size: 1.7rem;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 766px) and (max-width: 1400px) {
+    body {
+        padding: 0 2rem;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1401px) and (max-width: 1700px) {
+    form {
+        width: 50%;
+    }
+}
