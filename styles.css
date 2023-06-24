@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-image: url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
@@ -19,7 +19,7 @@ body {
 
 body::before {
     content: "";
-    position: absolute;
+    position: fixed;
     background-color: rgb(107,100,156, 0.6);
     top: 0;
     bottom: 0;
@@ -40,4 +40,90 @@ p {
     font-style: italic;
     text-align: center;
     font-weight: 100;
+}
+
+form {
+    width: 30%;
+    background-color: rgba(40,41,71, 0.9);
+    border-radius: 5px;
+    margin: 3rem auto 0;
+    padding: 4rem 2.4rem;
+}
+
+label,
+input,
+select {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    font-weight: 300;
+}
+
+input:focus {
+    outline: 0;
+    border-color: #0174ff;
+}
+
+textarea {
+    width: 100%;
+    padding: 1rem .8rem;
+    font-family: inherit;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    height: 10rem;
+    /* resize: none; */
+}
+
+textarea:focus {
+    outline: 0;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 3rem;
+}
+
+.input-utils {
+    padding: .7rem 1rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    border: 0;
+}
+
+.form-group label,
+.form-group p {
+    font-size: 1.8rem;
+    margin-bottom: 0.7rem;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+}
+
+
+.input-option label {
+    display: inline;
+    position: relative;
+    bottom: .3rem;
+    margin-left: .6rem;
+}
+
+.input-radio {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+}
+
+span.optional {
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.form-group button {
+    width: 100%;
+    background-color: #37af65;
+    border: 0;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1.2rem 0;
+    cursor: pointer;
 }
